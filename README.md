@@ -10,4 +10,4 @@ it would be better to create the folder to with the nam eof components
 and inside that a subfolder structure of new components 
 its will be helpful to update or modify the required component
 
-
+add some props to use the component dynamically

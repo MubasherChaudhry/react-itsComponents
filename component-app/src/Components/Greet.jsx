@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Hello = () => {
-  
+const Hello = (props) => {
   return (
     <div>
       <h1>
-        Hello Mobi
+        The name is {props.name} and age is {props.age}.
       </h1>
+      <h3>{props.children}</h3>
     </div>
-  )
-}
+  );
+};
 
-export default Hello
-
+export default Hello;
