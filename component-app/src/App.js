@@ -10,6 +10,12 @@ function update(){
 setValues({...allValues,fname:"Matt", lname:"MaxXx", age :19})
 }
 
+const [getinghigh, setgetinghigh]=useState({fname:"Hamza",age:"29"})
+
+
+function getHigh() {
+  setgetinghigh({...getHigh,fname:"Habibi", age:16})
+}
 
   return (
     <div className="App">
@@ -21,9 +27,10 @@ setValues({...allValues,fname:"Matt", lname:"MaxXx", age :19})
       <Hello name="MarG" age="30">
         <p>I am child Prop</p>
       </Hello>
-      <Hello name="Hamza"age= "29">
-        <button>Action</button>
-      </Hello>
+      <>
+      <h3>Name is {getinghigh.fname}and age is {getinghigh.age}</h3>
+        <button onClick={getHigh}>Action</button>
+        </>
       <Hello name="Mobi" age= "35">
 
         <p>WE Just added children props</p>
